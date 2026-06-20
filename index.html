@@ -1,20 +1,14 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muznna Majid | Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- NAVBAR -->
-
     <nav>
         <div class="nav-logo">Muznna</div>
-
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
@@ -24,158 +18,115 @@
         </ul>
     </nav>
 
-    <!-- HERO -->
-
     <header class="hero">
-
         <div class="hero-content">
-
             <h1>Muznna Majid</h1>
-
             <p id="typing-text"></p>
-
             <div class="hero-buttons">
-
-                <a href="#projects" class="btn-primary">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn-secondary">
-                    Contact Me
-                </a>
-
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
             </div>
-
         </div>
-
     </header>
 
-    <!-- ABOUT + EDUCATION -->
-
     <section class="about-education">
-
         <div id="about" class="about-card">
-
             <h2>About Me</h2>
-
-            <p>
-                I'm a Software Engineering student at FAST University
-                with a strong interest in software development,
-                problem solving, and building practical applications.
-
-                I enjoy learning new technologies and turning ideas
-                into real projects. Currently, I'm improving my skills
-                in development workflows, Git/GitHub, data structures,
-                and collaborative software development.
-            </p>
-
+            <p>I'm a Software Engineering student at FAST University with a strong interest in software development, problem solving, and building practical applications. I enjoy learning new technologies and turning ideas into real projects. Currently, I'm improving my skills in development workflows, Git/GitHub, data structures, and collaborative software development.</p>
         </div>
-
         <div id="education" class="education-card">
-
             <h2>Education</h2>
-
             <div class="education-item">
-
                 <h3>BS Software Engineering</h3>
-
                 <p>FAST University</p>
-
                 <span>Current Student</span>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- PROJECTS -->
-
     <section id="projects">
-
         <h2>Projects</h2>
-
         <div class="projects-grid">
-
             <div class="project-card">
-
                 <h3>Snow Bros Remake</h3>
-
-                <p>
-                    Recreated the classic Snow Bros game using
-                    C++ and SFML while implementing game mechanics,
-                    object-oriented design, and collision handling.
-                </p>
-
+                <p>Recreated the classic Snow Bros game using C++ and SFML while implementing game mechanics, object-oriented design, and collision handling.</p>
                 <div class="tags">
                     <span class="tag">C++</span>
                     <span class="tag">SFML</span>
                 </div>
-
+                <div class="card-buttons">
+                    <a href="snowbros.html" class="card-btn-view">View Project</a>
+                    <a href="https://github.com/muznna-dev/snow-bros-game" target="_blank" class="card-btn-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
-
             <div class="project-card">
-
                 <h3>Battleship Game</h3>
-
-                <p>
-                    Developed a console-based Battleship game
-                    featuring grid management, user interaction,
-                    and game-state tracking.
-                </p>
-
+                <p>Developed a console-based Battleship game featuring grid management, user interaction, and game-state tracking.</p>
                 <div class="tags">
                     <span class="tag">C++</span>
                 </div>
-
+                <div class="card-buttons">
+                    <a href="battleship.html" class="card-btn-view">View Project</a>
+                    <a href="https://github.com/muznna-dev/battleship" target="_blank" class="card-btn-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
-
             <div class="project-card">
-
                 <h3>Gaming Hub</h3>
-
-                <p>
-                    Built a collection of mini-games using SFML,
-                    focusing on event handling, graphics,
-                    and interactive gameplay.
-                </p>
-
+                <p>Built a collection of mini-games using SFML, focusing on event handling, graphics, and interactive gameplay.</p>
                 <div class="tags">
                     <span class="tag">C++</span>
                     <span class="tag">SFML</span>
                 </div>
-
+                <div class="card-buttons">
+                    <a href="gaminghub.html" class="card-btn-view">View Project</a>
+                    <a href="https://github.com/muznna-dev/gaming-hub" target="_blank" class="card-btn-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
-
             <div class="project-card">
-
                 <h3>Store Management System</h3>
-
-                <p>
-                    Designed a store management application using
-                    object-oriented programming principles including
-                    encapsulation and inheritance.
-                </p>
-
+                <p>Designed a store management application using object-oriented programming principles including encapsulation and inheritance.</p>
                 <div class="tags">
                     <span class="tag">C++</span>
                     <span class="tag">OOP</span>
                 </div>
-
+                <div class="card-buttons">
+                    <a href="storemanagement.html" class="card-btn-view">View Project</a>
+                    <a href="https://github.com/muznna-dev/store-management-system" target="_blank" class="card-btn-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
-
+            <div class="project-card">
+                <h3>Neural Network MLP</h3>
+                <p>Implemented a multi-layer perceptron from scratch, exploring feedforward networks, backpropagation, and basic machine learning concepts.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                </div>
+                <div class="card-buttons">
+                    <a href="neuralnetwork.html" class="card-btn-view">View Project</a>
+                    <a href="https://github.com/muznna-dev/neural-network-mlp" target="_blank" class="card-btn-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
         </div>
-
     </section>
 
-    <!-- SKILLS -->
-
     <section id="skills">
-
         <h2>Skills</h2>
-
         <div class="skills-grid">
-
             <div class="skill-card">C++</div>
             <div class="skill-card">Object-Oriented Programming</div>
             <div class="skill-card">SFML</div>
@@ -186,39 +137,37 @@
             <div class="skill-card">Linux / Ubuntu</div>
             <div class="skill-card">Figma</div>
             <div class="skill-card">Problem Solving</div>
-
         </div>
-
     </section>
 
-    <!-- CONTACT -->
-
-    <section id="contact">
-
-        <h2>Contact</h2>
-
-        <div class="contact-card">
-
-            <p>
-                Email:
-                <a href="mailto:muznnam@gmail.com">
-                    muznnam@gmail.com
+    <footer id="contact">
+        <div class="footer-inner">
+            <h2>Let's Connect</h2>
+            <p class="footer-sub">I'm always open to new opportunities, collaborations, or just a good conversation. Feel free to reach out!</p>
+            <div class="footer-links">
+                <a href="mailto:muznnam@gmail.com" class="footer-link-card">
+                    <div class="footer-link-icon">✉️</div>
+                    <div>
+                        <div class="footer-link-label">Email</div>
+                        <div class="footer-link-value">muznnam@gmail.com</div>
+                    </div>
                 </a>
-            </p>
-
-            <p>
-                GitHub:
-                <a href="https://github.com/muznna-dev" target="_blank">
-                    github.com/muznna-dev
+                <a href="https://github.com/muznna-dev" target="_blank" class="footer-link-card">
+                    <div class="footer-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#6b0f1a"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </div>
+                    <div>
+                        <div class="footer-link-label">GitHub</div>
+                        <div class="footer-link-value">github.com/muznna-dev</div>
+                    </div>
                 </a>
-            </p>
-
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Muznna Majid. Built with HTML, CSS & JavaScript.</p>
+            </div>
         </div>
-
-    </section>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
-```

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub | Muznna Majid</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-hero {
+            padding: 140px 0 60px;
+            text-align: center;
+        }
+
+        .project-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #6b0f1a;
+            margin-bottom: 12px;
+        }
+
+        .project-hero p {
+            font-size: 1.1rem;
+            color: #a9445d;
+            margin-bottom: 30px;
+        }
+
+        .project-hero .tags {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-action-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #8b1e2d;
+            font-weight: 600;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: #6b0f1a;
+        }
+
+        .project-section {
+            background: white;
+            border: 1px solid #f3d4d8;
+            border-radius: 18px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(107, 15, 26, 0.04);
+        }
+
+        .project-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #6b0f1a;
+        }
+
+        .project-section p {
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gallery-main {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            background: #111;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            max-height: 480px;
+
+            border: 1px solid #f3d4d8;
+            box-shadow: 0 20px 50px rgba(107, 15, 26, 0.12);
+        }
+
+        .gallery-main img {
+            width: 100%;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-thumbs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-thumbs img {
+            width: calc(14.28% - 9px);
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+
+            border-radius: 10px;
+            cursor: pointer;
+
+            border: 2px solid transparent;
+
+            transition: all 0.3s ease;
+            opacity: 0.6;
+        }
+
+        .gallery-thumbs img:hover {
+            opacity: 1;
+            transform: translateY(-3px);
+        }
+
+        .gallery-thumbs img.active {
+            border-color: #8b1e2d;
+            opacity: 1;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 5px;
+        }
+
+        .feature-chip {
+            background: #fff0f2;
+            border: 1px solid #f3d4d8;
+            border-radius: 12px;
+
+            padding: 14px 18px;
+
+            color: #6b0f1a;
+            font-weight: 500;
+            font-size: 0.9rem;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            transition: all 0.3s ease;
+        }
+
+        .feature-chip:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(139, 30, 45, 0.1);
+        }
+
+        .feature-chip .icon {
+            font-size: 1.2rem;
+        }
+
+        .learn-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .learn-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+
+            padding: 14px 18px;
+
+            background: #fff0f2;
+            border-radius: 12px;
+
+            color: #222;
+            font-size: 0.92rem;
+        }
+
+        .learn-item .dot {
+            width: 8px;
+            height: 8px;
+            min-width: 8px;
+            border-radius: 50%;
+            background: #8b1e2d;
+            margin-top: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-thumbs img {
+                width: calc(33.33% - 7px);
+            }
+
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">Muznna</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div style="width: min(1100px, 90%); margin: auto; padding-bottom: 100px;">
+
+        <div class="project-hero fade-up">
+            <a href="index.html#projects" class="back-link">
+                ← Back to Projects
+            </a>
+
+            <h1>Gaming Hub</h1>
+
+            <p>
+                A collection of mini-games built with C++ and SFML
+            </p>
+
+            <div class="tags">
+                <span class="tag">C++</span>
+                <span class="tag">SFML</span>
+            </div>
+
+            <div class="hero-action-btns">
+                <a href="https://github.com/muznna-dev/gaming-hub"
+                   target="_blank"
+                   class="btn-primary">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>Moments from the Games</h2>
+
+            <div class="gallery-main">
+                <img id="mainImage"
+                     src="images/gaminghub1.png"
+                     alt="Gaming Hub screenshot">
+            </div>
+
+            <div class="gallery-thumbs">
+                <img src="images/gaminghub1.png" alt="Screenshot 1" class="active" onclick="setMain(this)">
+                <img src="images/gaminghub2.png" alt="Screenshot 2" onclick="setMain(this)">
+                <img src="images/gaminghub3.png" alt="Screenshot 3" onclick="setMain(this)">
+                <img src="images/gaminghub4.png" alt="Screenshot 4" onclick="setMain(this)">
+                <img src="images/gaminghub5.png" alt="Screenshot 5" onclick="setMain(this)">
+                <img src="images/gaminghub6.png" alt="Screenshot 6" onclick="setMain(this)">
+                <img src="images/gaminghub7.png" alt="Screenshot 7" onclick="setMain(this)">
+            </div>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>About This Project</h2>
+
+            <p>
+                Gaming Hub is a collection of interactive mini-games
+                developed in C++ using the SFML library.
+            </p>
+
+            <p>
+                The project was built to explore event-driven
+                programming, real-time graphics rendering,
+                and game logic design.
+            </p>
+
+            <p>
+                Each mini-game is self-contained with its own game loop,
+                input handling, and visual feedback, all tied together
+                under one unified launcher.
+            </p>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>Features</h2>
+
+            <div class="feature-grid">
+                <div class="feature-chip"><span class="icon">🎮</span> Multiple mini-games</div>
+                <div class="feature-chip"><span class="icon">🎨</span> Real-time SFML graphics</div>
+                <div class="feature-chip"><span class="icon">⌨️</span> Keyboard & mouse input</div>
+                <div class="feature-chip"><span class="icon">🔄</span> Individual game loops</div>
+                <div class="feature-chip"><span class="icon">🏆</span> Score tracking</div>
+                <div class="feature-chip"><span class="icon">🖥️</span> Unified menu system</div>
+            </div>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>What I Learned</h2>
+
+            <div class="learn-list">
+                <div class="learn-item">
+                    <div class="dot"></div>
+                    Building and managing multiple game loops in a single project
+                </div>
+
+                <div class="learn-item">
+                    <div class="dot"></div>
+                    Handling real-time user input with SFML events
+                </div>
+
+                <div class="learn-item">
+                    <div class="dot"></div>
+                    Rendering graphics, text, and shapes using SFML
+                </div>
+
+                <div class="learn-item">
+                    <div class="dot"></div>
+                    Structuring a multi-game project cleanly in C++
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function setMain(thumb) {
+            const mainImg = document.getElementById("mainImage");
+
+            mainImg.style.opacity = "0";
+
+            setTimeout(() => {
+                mainImg.src = thumb.src;
+                mainImg.style.opacity = "1";
+            }, 150);
+
+            document
+                .querySelectorAll(".gallery-thumbs img")
+                .forEach(t => t.classList.remove("active"));
+
+            thumb.classList.add("active");
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            {
+                threshold: 0.1
+            }
+        );
+
+        document
+            .querySelectorAll(".fade-up")
+            .forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>
